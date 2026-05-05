@@ -1,0 +1,402 @@
+PART 1: LOGIN & BASIC SETUP
+🔹 Step 1: Login to Azure
+Go to 👉 https://portal.azure.com
+Login using your Microsoft account
+🔹 Step 2: Open Azure Portal
+
+After login, you’ll see dashboard.
+
+👉 Click:
+
+☰ Menu (top left) OR
+"Create a resource"
+🧱 PART 2: CREATE LAB ACCOUNT
+🔹 Step 3: Search Lab Account
+In search bar → type Lab Account
+Click → Lab Account
+Click → Create
+🔹 Step 4: Fill Basic Details
+
+Fill carefully 👇
+
+Subscription → Select your subscription (Free Trial works)
+Resource Group →
+👉 Click Create New → Name: LabResourceGroup
+Lab Account Name →
+👉 Example: BhagyashriLab
+Region →
+👉 Choose: Central India (or nearest)
+🔹 Step 5: Review & Create
+Click Review + Create
+Click Create
+Wait for deployment (1–2 mins)
+🔹 Step 6: Open Lab Account
+
+After deployment:
+👉 Click Go to Resource
+
+You’ll see:
+
+Overview page ✔
+👥 PART 3: ADD USERS (IMPORTANT)
+🎯 Add students as Lab Creators
+🔹 Step 7: Open IAM
+Inside Lab Account
+👉 Click Access Control (IAM)
+🔹 Step 8: Add Role
+Click → + Add
+Select → Add Role Assignment
+🔹 Step 9: Select Role
+Choose: ✅ Lab Creator
+🔹 Step 10: Add Members
+Click Select Members
+Add:
+Your email OR
+Friend/student email
+🔹 Step 11: Assign Role
+
+👉 Click:
+
+Review + Assign
+
+✔ Done → User can now create labs
+
+🧪 PART 4: CREATE LAB (VERY IMPORTANT FOR OUTPUT)
+
+This is what makes your assignment strong 💯
+
+🔹 Step 12: Create Lab
+Inside Lab Account
+👉 Click Labs
+Click → + Create
+🔹 Step 13: Configure Lab
+
+Fill:
+
+Lab Name → StudentLab
+Virtual Machine Size → Small (to save credits)
+Image → Choose:
+Windows 10 OR
+Ubuntu
+🔹 Step 14: Set Credentials
+Username → student
+Password → (simple password you remember)
+🔹 Step 15: Finish Creation
+
+👉 Click Create
+
+⏳ Wait few minutes
+
+👨‍🎓 PART 5: ADD STUDENTS TO LAB
+🔹 Step 16: Add Users
+Open your Lab
+Go to → Users
+Click → Add Users
+
+👉 Enter:
+
+Email IDs
+🔹 Step 17: Publish Lab
+
+👉 Click Publish
+
+✔ Students can now access VM
+
+🖥️ OUTPUT (What you should show)
+Lab Account created ✔
+Users added ✔
+Lab created ✔
+Virtual Machine ready ✔
+🧾 WRITE THIS IN OUTPUT SECTION
+
+👉 Output:
+
+Successfully created Azure Lab Account
+Assigned Lab Creator role to users
+Created virtual lab environment for students
+🎯 VIVA QUESTIONS + ANSWERS
+❓1. Who should be owners and contributors?
+✔ Answer:
+Owner:
+Full control (create/delete resources)
+Usually Admin or Faculty
+Contributor:
+Can create/edit resources
+Cannot assign roles
+Lab Creator:
+Can create labs inside lab account
+❓2. Steps to setup Azure Lab Services?
+✔ Answer:
+Login to Azure Portal
+Create Lab Account
+Configure Resource Group & Region
+Deploy Lab Account
+Assign Lab Creator role
+Create Lab
+Add users
+Publish lab
+❓3. Compare Azure vs Google Cloud
+Feature	Azure	Google Cloud
+Owner	Microsoft	Google
+Best for	Enterprise	AI & Data
+Services	Wide range	Strong ML tools
+UI	Complex	Simple
+Integration	Windows-friendly	Open-source friendly
+⚠️ IMPORTANT TIPS
+If Lab Account option not visible:
+👉 Search directly in top search bar
+If no subscription:
+👉 Use Azure Free Account
+
+
+
+
+
+
+
+
+DVANCED VIVA QUESTIONS – Azure Lab Services
+❓1. What is Azure Lab Services and how is it different from Virtual Machines?
+✔ Answer:
+
+Azure Lab Services is a managed service that allows easy creation of pre-configured virtual environments for students or users.
+
+Difference:
+
+Azure Virtual Machines → Full control, manual setup required
+Azure Lab Services → Pre-configured, scalable, managed environment
+
+👉 Lab Services reduces administrative overhead.
+
+❓2. What is a Lab Account and why is it required?
+✔ Answer:
+
+A Lab Account is the central resource in Azure Lab Services used to:
+
+Manage multiple labs
+Control access
+Apply policies
+
+👉 Without Lab Account, labs cannot be created.
+
+❓3. Explain the role-based access control (RBAC) in Azure Lab Services.
+✔ Answer:
+
+RBAC ensures secure access management using roles:
+
+Owner → Full access including role assignment
+Contributor → Can manage resources but cannot assign roles
+Lab Creator → Can create labs inside lab account
+
+👉 It prevents unauthorized control of resources.
+
+❓4. What is the difference between Resource Group and Lab Account?
+✔ Answer:
+Resource Group:
+Logical container for Azure resources
+Used for management, billing, and lifecycle
+Lab Account:
+Specific resource for managing labs
+
+👉 Resource Group is broader, Lab Account is specific.
+
+❓5. Why is region selection important in Azure?
+✔ Answer:
+
+Region determines:
+
+Data location
+Latency
+Compliance requirements
+
+👉 Choosing nearest region improves performance and reduces delay.
+
+❓6. What happens internally when you click “Create Lab”?
+✔ Answer:
+
+Azure:
+
+Allocates compute resources
+Creates virtual machines
+Configures networking
+Applies lab policies
+
+👉 All this is automated by Azure.
+
+❓7. What is the purpose of “Publish” in Lab Services?
+✔ Answer:
+
+Publishing:
+
+Makes lab available to users
+Creates VM instances for each user
+
+👉 Without publishing, students cannot access lab.
+
+❓8. What is the difference between template VM and student VM?
+✔ Answer:
+Template VM:
+Base configuration (software installed here)
+Student VM:
+Copy of template
+Assigned to each user
+
+👉 Template is master, student VM is replica.
+
+❓9. How does Azure handle scalability in Lab Services?
+✔ Answer:
+
+Azure automatically:
+
+Creates multiple VM instances
+Allocates resources dynamically
+
+👉 It supports large number of users without manual setup.
+
+❓10. What are quotas in Azure Lab Services?
+✔ Answer:
+
+Quota limits:
+
+Number of VMs
+Compute usage
+
+👉 Prevents overuse and controls cost.
+
+❓11. What is the pricing model of Azure Lab Services?
+✔ Answer:
+
+Based on:
+
+VM usage time
+Size of VM
+Number of users
+
+👉 Pay-as-you-go model.
+
+❓12. What is IAM in Azure?
+✔ Answer:
+
+IAM (Identity and Access Management):
+
+Controls who can access resources
+Uses roles and permissions
+
+👉 Ensures security.
+
+❓13. What are the advantages of Azure Lab Services?
+✔ Answer:
+Easy setup
+No infrastructure management
+Scalable
+Cost-effective
+Secure access
+❓14. What are limitations of Azure Lab Services?
+✔ Answer:
+Limited customization compared to full VMs
+Requires subscription
+Dependent on internet
+❓15. What is the difference between Azure Lab Services and Azure DevTest Labs?
+✔ Answer:
+Lab Services → For students/classrooms
+DevTest Labs → For developers/testing
+
+👉 Different use cases.
+
+❓16. What security features are provided in Azure Lab Services?
+✔ Answer:
+Role-based access
+Isolated VMs
+Secure login
+
+👉 Protects data and access.
+
+❓17. What happens if a lab account is deleted?
+✔ Answer:
+All labs inside it are deleted
+All associated VMs are removed
+
+👉 Data loss occurs.
+
+❓18. How can you monitor lab usage?
+✔ Answer:
+
+Using:
+
+Azure Portal
+Metrics and logs
+
+👉 Helps in cost and performance tracking.
+
+❓19. What is the purpose of Virtual Machine size selection?
+✔ Answer:
+
+Defines:
+
+CPU
+RAM
+Performance
+
+👉 Larger size = more cost + better performance.
+
+❓20. Can multiple users access same VM?
+✔ Answer:
+
+No ❌
+Each user gets separate VM instance
+
+👉 Ensures isolation.
+
+❓21. What is the use of template customization?
+✔ Answer:
+
+Install:
+
+Software
+Tools
+
+👉 So all student VMs have same setup.
+
+❓22. Why is Azure considered cloud computing?
+✔ Answer:
+
+Because it provides:
+
+On-demand resources
+Internet-based services
+No local infrastructure
+❓23. Difference between IaaS, PaaS, SaaS in Azure?
+✔ Answer:
+IaaS → Virtual machines
+PaaS → Platform for development
+SaaS → Ready-to-use software
+❓24. What are common errors in Azure Lab setup?
+✔ Answer:
+No subscription
+Wrong region
+Role not assigned
+Lab not published
+❓25. Why do we assign Lab Creator role?
+✔ Answer:
+
+To allow users to:
+
+Create and manage labs
+
+👉 Without it, user cannot create labs.
+
+🔥 BONUS TRICK QUESTION (EXAMINER FAVORITE)
+❓What happens if you don’t publish the lab?
+
+👉 Answer:
+Lab will be created but users cannot access VMs
+
+✅ FINAL TIP
+
+If examiner asks anything:
+👉 Always include keywords:
+
+Scalability
+Cloud-based
+Resource management
+Security (RBAC)
